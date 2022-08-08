@@ -132,6 +132,39 @@
     font-size: calc(0.7em + 0.75vw) !important;
 }
 
+.card-text{
+    position: absolute;
+    bottom: 9px;
+    text-shadow: 2px 2px 30px #000000;
+    font-family: 'PT Serif', serif;
+    color: rgb(77, 18, 18);
+}
+
+.card-text2{
+    position: absolute;
+    bottom: 9px;
+    text-shadow: 2px 2px 30px #000000;
+    font-family: 'PT Serif', serif;
+    color: rgb(255, 255, 255);
+}
+
+.card-title{
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.float-start{
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+.EB{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 @media screen and (min-width: 568px) { 
     .cards-wrapper{
@@ -139,7 +172,7 @@
     }
     .card{
         margin: 0 .9em;
-        width: calc(100%/3);
+        width: calc(100%/2);
     }
     .image-wrapper{
         height: 22vw;

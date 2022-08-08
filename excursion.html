@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Excursion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand ms-2" href="#">
+                <img src="img/logo.png" style="height: 50px; width: 82px;" alt="">
+              </a>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+
+              <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Turlar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Grup Turları</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Destinasyonlar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">İletişim</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+              </div> -->
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDark" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkLabel">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html" style="text-shadow: 2px 2px 30px #000000;" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="excursion.html" style="text-shadow: 2px 2px 30px #000000;">Excursion</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="text-shadow: 2px 2px 30px #000000;">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html" style="text-shadow: 2px 2px 30px #000000;">Contact</a>
+                    </li>
+                    
+                  </ul>
+                  <div class="trwpwhatsappall mb-4">
+                    <div id="ackapa" class="trwpwhatsappbutton">
+                      <i class="fa-brands fa-whatsapp" style="font-size: 20px; text-decoration: none; color: white; "></i> <span>WhatsApp </span>
+                    </div>
+                    <div class="trwpwhatsappballon" style="display: none;">
+                     <span id="kapatac" class="kapat">X</span>
+                      <div class="trwpwhatsapptitle">
+                         WhatsApp destek ekibimiz sorularınızı cevaplıyor.
+                      </div>
+                      <div class="trwpwhatsappmessage">
+                         Merhaba, nasıl yardımcı olabilirim?
+                      </div>
+                      <div class="trwpwhatsappinput">
+                        <form action="https://web.whatsapp.com/send?" method="get" target="_blank">
+                          <input type="text" name="phone" value="905316552083" hidden>
+                          <input type="text" name="text" placeholder="Buradan cevap verebilirsiniz." autocomplete="off">
+                          <button class="trwpwhatsappsendbutton" type="submit">
+                            
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    </div>
+
+                  <!-- <div>
+                    <a href="#"><i class="fa-brands fa-whatsapp me-4" style="font-size: 50px; text-decoration: none; color: #25D366; "></i> </a>
+                  </div> -->
+                
+                </div>
+              </div>  
+            
+              
+            </div>
+          </nav>
+
+         
+        <img src="img/Kapak.jpg" alt="" class="EB">
+            
+       
+        <!-- Adventure Trips -->
+    
+    <div class="row m-0 text-center" style="background-color: #f4f4f4;">
+      <div class="col-sm-12 pt-5 border-top border-secondary" >
+        <span style="font-size: 20px;" >Alışılmışın dışında bir tatil hayal ediyorsanız burada keşfedeceğiniz çok şey var!</span>
+        
+        <hr class="mx-auto" style="width: 100px; border-width: 3px; border-color: black;">
+         <span style="font-size: 20px;">
+          KİŞİYE ÖZEL TURLAR
+        </span>
+      </div>
+        
+        <div class="col-sm-12 mt-5">
+            <strong><p class="float-start ">Adventure Trips</p></strong>
+            
+          <div id="carouselExampleControls" class="carousel carousel-dark slide mx-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <div class="cards-wrapper">
+                  <div class="card text-bg-dark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                    <div class="image-wrapper">
+                      <img src="img/adventure (1).jpeg" class="card-img" alt="...">
+                    </div>
+                    <div class="card-img-overlay">
+                       
+                      <h5 class="card-title">Parachute</h5>
+                      <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      
+                    </div>
+                  </a>
+                  </div>
+                  <div class="card text-bg-dark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                        <div class="image-wrapper">
+                          <img src="img/adventure (2).jpeg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-img-overlay">
+                           
+                          <h5 class="card-title">Cable Car</h5>
+                          <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          
+                        </div>
+                      </a>
+                  </div>
+                  <div class="card text-bg-dark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                        <div class="image-wrapper">
+                          <img src="img/adventure (3).jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-img-overlay">
+                           
+                          <h5 class="card-title">Jeep Safari</h5>
+                          <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          
+                        </div>
+                      </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card text-bg-dark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                        <div class="image-wrapper">
+                          <img src="img/adventure (4).jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-img-overlay">
+                           
+                          <h5 class="card-title">Buggy Safari</h5>
+                          <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          
+                        </div>
+                      </a>
+                  </div>
+                  <div class="card text-bg-dark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                        <div class="image-wrapper">
+                          <img src="img/adventure (5).jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card-img-overlay">
+                           
+                          <h5 class="card-title">Diving Tour</h5>
+                          <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          
+                        </div>
+                      </a>
+                  </div>
+                  <div class="card text-bg-dark">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                        <div class="image-wrapper">
+                          <img src="img/adventure (6).png" class="card-img" alt="...">
+                        </div>
+                        <div class="card-img-overlay">
+                           
+                          <h5 class="card-title">Boat Tour</h5>
+                          <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          
+                        </div>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Entertainment Trips -->
+
+          <div class="col-sm-12 mt-5">
+              <strong><p class="float-start" >Entertainment Trips</p></strong>
+              
+            <div id="carouselExampleControls" class="carousel carousel-dark slide mx-2" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active ">
+                  <div class="cards-wrapper">
+                    <div class="card text-bg-dark">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                      <div class="image-wrapper">
+                        <img src="img/ent (1).jpg" class="card-img" alt="...">
+                      </div>
+                      <div class="card-img-overlay">
+                         
+                        <h5 class="card-title">Dolphin Park</h5>
+                        <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                      </div>
+                    </a>
+                    </div>
+                    <div class="card text-bg-dark">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                          <div class="image-wrapper">
+                            <img src="img/ent (2).jpg" class="card-img" alt="...">
+                          </div>
+                          <div class="card-img-overlay">
+                             
+                            <h5 class="card-title">Horse Riding</h5>
+                            <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            
+                          </div>
+                        </a>
+                    </div>
+                    <div class="card text-bg-dark">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                          <div class="image-wrapper">
+                            <img src="img/ent (3).jpeg" class="card-img" alt="...">
+                          </div>
+                          <div class="card-img-overlay">
+                             
+                            <h5 class="card-title">Fun Park</h5>
+                            <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            
+                          </div>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+  
+          </div>
+  
+        </div>
+
+      <!-- Historical Trips -->
+      
+          
+          <div class="col-sm-12 mt-5">
+              <strong><p class="float-start ">Historical Trips</p></strong>
+              
+            <div id="carouselExampleControls" class="carousel carousel-dark slide mx-2" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active ">
+                  <div class="cards-wrapper">
+                    <div class="card text-bg-dark">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                      <div class="image-wrapper">
+                        <img src="img/historical (1).jpg" class="card-img" alt="...">
+                      </div>
+                      <div class="card-img-overlay">
+                        
+                        <h5 class="card-title">Cappadocia</h5>
+                        <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        
+                      </div>
+                    </a>
+                    </div>
+                    <div class="card text-bg-dark">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                          <div class="image-wrapper">
+                            <img src="img/historical (2).jpg" class="card-img" alt="...">
+                          </div>
+                          <div class="card-img-overlay">
+                             
+                            <h5 class="card-title">Myra</h5>
+                            <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                            
+                          </div>
+                        </a>
+                    </div>
+                    <div class="card text-bg-dark">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                          <div class="image-wrapper">
+                            <img src="img/historical (3).jpg" class="card-img" alt="...">
+                          </div>
+                          <div class="card-img-overlay">
+                             
+                            <h5 class="card-title">Alanya</h5>
+                            <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            
+                          </div>
+                        </a>
+                    </div>
+                    <div class="card text-bg-dark">
+                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: whitesmoke;"> 
+                          <div class="image-wrapper">
+                            <img src="img/historical (4).jpg" class="card-img" alt="...">
+                          </div>
+                          <div class="card-img-overlay">
+                             
+                            <h5 class="card-title">Side</h5>
+                            <p class="card-text2">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                            
+                          </div>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+  
+          </div>
+  
+        </div>
+
+      <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">X Turu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row"  >
+          <div class="col-sm-12 text-center"> 
+            <h2> Tur Görselleri </h2>
+            <div id="carouselExampleControlsModal" class="carousel carousel-dark slide mx-2" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active ">
+                  <div class="cards-wrapper">
+                    <div class="card text-bg-dark">
+                      
+                      <div class="image-wrapper">
+                        <img src="img/Gelidonya.jpg" class="card-img" alt="...">
+                      </div>
+                    
+                    </div>
+                    <div class="card text-bg-dark">
+                      <div class="image-wrapper">
+                        <img src="img/manavgat.png" class="card-img" alt="...">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cards-wrapper">
+                    <div class="card text-bg-dark">
+                      <div class="image-wrapper">
+                        <img src="img/Suluada.jpg" class="card-img" alt="...">
+                      </div>
+                    </div>
+                    <div class="card text-bg-dark">
+                      <div class="image-wrapper">
+                        <img src="img/Antalya-old.png" class="card-img" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsModal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsModal" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+          
+         <div class="col-sm-12">
+           <br><strong> <p>Description</p></strong>
+          <p> • Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum iure eaque porro culpa voluptas fugit quaerat? Ipsam fugiat cum perspiciatis quasi esse ut ex. Reprehenderit dolores id ducimus saepe accusamus!
+          Ab deserunt cupiditate iusto in nesciunt saepe, placeat maiores possimus voluptatibus eaque cum unde quo id ipsum tenetur, quibusdam mollitia omnis perferendis, ea eos magnam at necessitatibus nisi? Delectus, corporis.</p>
+          <strong> <p>Details</p></strong>
+          <p> • Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eum at voluptates soluta deleniti iure ad suscipit mollitia reprehenderit fuga et animi ipsa est obcaecati error aut, rem odio quo!
+          Nulla quod cum porro fuga praesentium sapiente natus debitis soluta vitae illum! Qui consequatur, facere saepe aliquid porro mollitia dicta beatae veniam amet hic, quisquam vel quos culpa voluptas! Id.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil, nisi quia aliquam accusantium pariatur, tempora ex possimus aspernatur corrupti perferendis facilis tenetur accusamus totam debitis libero eum magni molestiae!
+          Culpa nulla, quo nihil maxime odit corporis, animi molestiae, distinctio temporibus nobis fugiat blanditiis sequi illo saepe aperiam quidem iste reprehenderit autem cupiditate consectetur tempore itaque debitis voluptas! Modi, ratione?
+          Nisi minus facilis consequuntur? Eum temporibus eligendi quaerat. Doloribus molestiae repellat beatae earum, facere quod in cum sit illo tempora ipsa ullam, nam aut, non nesciunt possimus vel laudantium assumenda!
+          Ab quidem corrupti, aliquam commodi perspiciatis quaerat nostrum voluptatem provident eligendi sunt distinctio blanditiis enim assumenda. Quasi recusandae possimus voluptatum excepturi, distinctio dolorem nostrum temporibus, cumque ullam provident quibusdam consequatur!
+          Iste quibusdam doloribus, ullam explicabo facilis deleniti rerum sequi, quae vitae, nemo cum ratione odio cupiditate pariatur totam alias autem eveniet? Reprehenderit, laborum? Voluptates nesciunt accusantium aliquam ipsam officia eaque?
+          </p>
+         </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Reservation</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer Starts -->
+
+    <div class="bg-danger">
+      <footer class="py-3 mt-5">
+        <br>
+        <a href="https://www.instagram.com/excursionpartner/?igshid=YmMyMTA2M2Y="
+        target="_blank" class="position-absolute start-50 translate-middle" style="text-decoration:none; color: white;"> <button style="background-color:transparent; border: none; font-size: 50px;"> <img src="img/ig1.png" alt="" style="width: 48px; height: 48px; " ></button> </a>
+        <br>
+        <br> 
+        <a href="https://www.instagram.com/excursionpartner/?igshid=YmMyMTA2M2Y="  target="_blank" class="position-absolute start-50 translate-middle" style="text-decoration: none; color: white;">Follow Us!</a>
+        <br>
+        
+
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Excursion</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Categories</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-light">Contact</a></li>
+        </ul>
+        <p class="text-center text-light">© 2022 Excursion Partner</p>
+      </footer>
+    </div>
+    
+  <!-- Footer Ends -->
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            let nav = document.querySelector('nav');
+            let windowPosition = window.scrollY > 0;
+            nav.classList.toggle('scrolling-active', windowPosition);
+        })
+
+        // GRAP AND SCROLL
+        // document.addEventListener('DOMContentLoaded', function () {
+        //         const ele = document.getElementById('scrollAble');
+        //         ele.style.cursor = 'grab';
+
+        //         let pos = { top: 0, left: 0, x: 0, y: 0 };
+
+        //         const mouseDownHandler = function (e) {
+        //             ele.style.cursor = 'grabbing';
+        //             ele.style.userSelect = 'none';
+
+        //             pos = {
+        //                 left: ele.scrollLeft,
+        //                 top: ele.scrollTop,
+        //                 // Get the current mouse position
+        //                 x: e.clientX,
+        //                 y: e.clientY,
+        //             };
+
+        //             document.addEventListener('mousemove', mouseMoveHandler);
+        //             document.addEventListener('mouseup', mouseUpHandler);
+        //         };
+
+        //         const mouseMoveHandler = function (e) {
+        //             // How far the mouse has been moved
+        //             const dx = e.clientX - pos.x;
+        //             const dy = e.clientY - pos.y;
+                    
+
+        //             // Scroll the element
+        //             ele.scrollTop = pos.top - dy;
+        //             ele.scrollLeft = pos.left - dx;
+        //         };
+
+        //         const mouseUpHandler = function () {
+        //             ele.style.cursor = 'grab';
+        //             ele.style.removeProperty('user-select');
+
+        //             document.removeEventListener('mousemove', mouseMoveHandler);
+        //             document.removeEventListener('mouseup', mouseUpHandler);
+        //         };
+
+        //         // Attach the handler
+        //         ele.addEventListener('mousedown', mouseDownHandler);
+              
+                
+              
+            
+        //     });
+      
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // $(".trwpwhatsappballon").hide(1000,callback);
+        $("#ackapa").click(function() {
+        
+        $(".trwpwhatsappballon").toggle(2000);
+        
+      
+        });
+        $("#kapatac").click(function() {
+        
+        $(".trwpwhatsappballon").toggle(2000);
+        
+        });
+        
+        
+        });
+        
+    </script>
+
+
+  
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
